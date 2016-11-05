@@ -34,8 +34,8 @@
 
 <!-- ############ LAYOUT START-->
 
-  <!-- content -->
   <div id="content" class="app-content box-shadow-z0" role="main">
+    <!-- Header -->
     <div class="app-header white box-shadow">
         <div class="header">
 			<!-- Open side - Naviation on mobile -->
@@ -209,9 +209,8 @@
           <div ui-include="'../views/blocks/navbar.custom.html'"></div>
 		<!-- / navbar collapse -->
     </div>
+    <!-- Content -->
     <div ui-view class="app-body" id="view">
-
-      <!-- ############ PAGE START-->
       <!-- Hero section -->
       <div class="hero white lt">
           <div class="container">
@@ -241,14 +240,16 @@
           </div>
       </div>
       <!-- / -->
-      <div class="container" id="current-projects">
-        <div class="row">
-          <div class="col-sm-12"><h1>Aktuelni projekti</h1></div>
-          <div class="col-sm-3">1</div>
-          <div class="col-sm-9">2</div>
+      <section id="current-projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12"><h1>Aktuelni projekti</h1></div>
+            <div class="col-sm-3">1</div>
+            <div class="col-sm-9">2</div>
+          </div>
         </div>
-      </div>
-      <div class="padding" id="freelancers">
+      </section>
+      <section id="freelancers" class="padding">
         <div class="row">
           <div class="col-sm-12"><h1>Trenutno slobodni freelanceri</h1></div>
           <div class="col-sm-2">1</div>
@@ -259,36 +260,38 @@
           <div class="col-sm-2">6</div>
           <div class="col-sm-12"><button>Pretraži profile</button></div>
         </div>
-      </div>
-      <div class="padding" id="services">
+      </section>
+      <section id="services" class="padding">
         <div class="row">
           <div class="col-sm-12"><h1>Digitalne usluge</h1></div>
         </div>
-      </div>
-      <div class="container" id="current-projects">
-        <div class="row">
-          <div class="col-sm-12"><h1>Baza znanja</h1></div>
-          <div class="col-sm-3">1</div>
-          <div class="col-sm-9">2</div>
+      </section>
+      <section id="current-projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12"><h1>Baza znanja</h1></div>
+            <div class="col-sm-3">1</div>
+            <div class="col-sm-9">2</div>
+          </div>
         </div>
-      </div>
-      <div class="padding" id="tutorials">
+      </section>
+      <section id="tutorials" class="padding">
         <div class="row">
           <div class="col-sm-12"><h1>Tutorials</h1></div>
         </div>
-      </div>
-      <div class="container" id="blog">
-        <div class="row">
-          <div class="col-sm-12"><h1>Blog</h1></div>
-          <div class="col-sm-4">1</div>
-          <div class="col-sm-4">2</div>
-          <div class="col-sm-4">3</div>
+      </section>
+      <section id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12"><h1>Blog</h1></div>
+            <div class="col-sm-4">1</div>
+            <div class="col-sm-4">2</div>
+            <div class="col-sm-4">3</div>
+          </div>
         </div>
-      </div>
-
-      <!-- ############ PAGE END-->
-
+      </section>
     </div>
+    <!-- Footer -->
 	<div class="app-footer">
       <div class="container">
         <div class="row">
@@ -356,7 +359,6 @@
     </div>
     <a href="" id="to-top" class="to-top shadow" ui-scroll-to="content"><i class="material-icons">expand_less</i></i></a>
   </div>
-  <!-- / -->
 
 <!-- ############ LAYOUT END-->
 
