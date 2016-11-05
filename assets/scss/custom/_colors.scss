@@ -1,0 +1,309 @@
+/* ------ Colors ------ */
+
+// BW
+.bw-50 {
+  background-color: $bw-50;
+  color: $base-font-color;
+}
+
+.bw-100 {
+  background-color: $bw-100;
+  color: $base-font-color;
+}
+
+.bw-200 {
+  background-color: $bw-200;
+  color: $base-font-color;
+}
+
+.bw-300 {
+  background-color: $bw-300;
+  color: $base-font-color;
+}
+
+.bw-400 {
+  background-color: $bw-400;
+  color: $base-font-color;
+}
+
+.bw-500 {
+  background-color: $bw-500;
+  color: $base-font-color;
+}
+
+.bw-600 {
+  background-color: $bw-600;
+  color: $dark-base-font-color;
+}
+
+.bw-700 {
+  background-color: $bw-700;
+  color: $dark-base-font-color;
+}
+
+.bw-800 {
+  background-color: $bw-800;
+  color: $dark-base-font-color;
+}
+
+.bw-900 {
+  background-color: $bw-900;
+  color: $dark-base-font-color;
+}
+
+// BWm
+.bwm-50 {
+  background-color: $bwm-50;
+  color: $base-font-color;
+}
+
+.bwm-100 {
+  background-color: $bwm-100;
+  color: $base-font-color;
+}
+
+.bwm-200 {
+  background-color: $bwm-200;
+  color: $base-font-color;
+}
+
+.bwm-300 {
+  background-color: $bwm-300;
+  color: $base-font-color;
+}
+
+.bwm-400 {
+  background-color: $bwm-400;
+  color: $base-font-color;
+}
+
+.bwm-500 {
+  background-color: $bwm-500;
+  color: $base-font-color;
+}
+
+.bwm-600 {
+  background-color: $bwm-600;
+  color: $dark-base-font-color;
+}
+
+.bwm-700 {
+  background-color: $bwm-700;
+  color: $dark-base-font-color;
+}
+
+.bwm-800 {
+  background-color: $bwm-800;
+  color: $dark-base-font-color;
+}
+
+.bwm-900 {
+  background-color: $bwm-900;
+  color: $dark-base-font-color;
+}
+
+// Pink
+.pink-50 {
+  background-color: $pink-50;
+  color: $base-font-color;
+}
+
+.pink-100 {
+  background-color: $pink-100;
+  color: $base-font-color;
+}
+
+.pink-200 {
+  background-color: $pink-200;
+  color: $base-font-color;
+}
+
+.pink-300 {
+  background-color: $pink-300;
+  color: $dark-base-font-color;
+}
+
+.pink-400 {
+  background-color: $pink-400;
+  color: $dark-base-font-color;
+}
+
+.pink-500 {
+  background-color: $pink-500;
+  color: $dark-base-font-color;
+}
+
+.pink-600 {
+  background-color: $pink-600;
+  color: $dark-base-font-color;
+}
+
+.pink-700 {
+  background-color: $pink-700;
+  color: $dark-base-font-color;
+}
+
+.pink-800 {
+  background-color: $pink-800;
+  color: $dark-base-font-color;
+}
+
+.pink-900 {
+  background-color: $pink-900;
+  color: $dark-base-font-color;
+}
+
+.pink-a100 {
+  background-color: $pink-a100;
+  color: $dark-base-font-color;
+}
+
+.pink-a200 {
+  background-color: $pink-a200;
+  color: $dark-base-font-color;
+}
+
+.pink-a400 {
+  background-color: $pink-a400;
+  color: $dark-base-font-color;
+}
+
+.pink-a700 {
+  background-color: $pink-a700;
+  color: $dark-base-font-color;
+}
+
+// Green
+.green-50 {
+  background-color: $green-50;
+  color: $base-font-color;
+}
+
+.green-100 {
+  background-color: $green-100;
+  color: $base-font-color;
+}
+
+.green-200 {
+  background-color: $green-200;
+  color: $base-font-color;
+}
+
+.green-300 {
+  background-color: $green-300;
+  color: $dark-base-font-color;
+}
+
+.green-400 {
+  background-color: $green-400;
+  color: $dark-base-font-color;
+}
+
+.green-500 {
+  background-color: $green-500;
+  color: $dark-base-font-color;
+}
+
+.green-600 {
+  background-color: $green-600;
+  color: $dark-base-font-color;
+}
+
+.green-700 {
+  background-color: $green-700;
+  color: $dark-base-font-color;
+}
+
+.green-800 {
+  background-color: $green-800;
+  color: $dark-base-font-color;
+}
+
+.green-900 {
+  background-color: $green-900;
+  color: $dark-base-font-color;
+}
+
+.green-a100 {
+  background-color: $green-a100;
+  color: $dark-base-font-color;
+}
+
+.green-a200 {
+  background-color: $green-a200;
+  color: $dark-base-font-color;
+}
+
+.green-a400 {
+  background-color: $green-a400;
+  color: $dark-base-font-color;
+}
+
+.green-a700 {
+  background-color: $green-a700;
+  color: $dark-base-font-color;
+}
+
+/* Gradients */
+
+.gradient-pink {
+  @include gradient-pink;
+}
+
+.gradient-green {
+  @include gradient-green;
+}
+
+.gradient-pg {
+  @include gradient-pg;
+}
+
+.gradient-pgl {
+  @include gradient-pgl;
+}
+
+/* Fonts */
+.base-font-color {
+  color: $base-font-color;
+}
+
+.secondary-font-color {
+  color: $secondary-font-color;
+}
+
+.disabled-font-color {
+  color: $disabled-font-color;
+}
+
+.dark-base-font-color {
+  color: $dark-base-font-color;
+}
+
+.dark-secondary-font-color {
+  color: $dark-secondary-font-color;
+}
+
+.dark-disabled-font-color {
+  color: $dark-disabled-font-color;
+}
+
+.sys-green {
+  color: $sys-green;
+}
+
+.sys-red {
+  color: $sys-red;
+}
+
+.sys-yellow {
+  color: $sys-yellow;
+}
+
+.sys-blue {
+  color: $sys-blue;
+}
+
+/* Shadows */
+.shadow {
+  @include shadow;
+}
