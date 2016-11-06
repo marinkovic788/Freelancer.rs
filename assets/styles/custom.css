@@ -357,6 +357,9 @@ h6 {
 .btn:not([disabled]).active {
   box-shadow: inset 0 -10rem 0 rgba(0, 0, 0, 0.12); }
 
+.md-check > i:before {
+  border-radius: 0; }
+
 /* App */
 .app-header ~ .app-body {
   padding-bottom: 60px;
@@ -559,6 +562,76 @@ h6 {
       .hero .h-search .h-trending-services .h-trending-service:last-child {
         margin-right: 0; }
 
+.section {
+  padding: 60px 15px; }
+
+.h-divider {
+  color: rgba(0, 0, 0, 0.12); }
+
+.sidebar .sidebar-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 30px 0;
+  width: 100%; }
+
+.sidebar .sidebar-item:first-child {
+  padding: 0 0 30px; }
+
+.sidebar .sidebar-item:last-child {
+  padding: 30px 0 0; }
+
+.sidebar .sidebar-item:last-child,
+.sidebar .no-border {
+  border-bottom: 0; }
+
+.sidebar .no-padding {
+  padding: 0 !important; }
+
+.sidebar .no-margin {
+  margin-bottom: 0 !important; }
+
+.sidebar .sidebar-title {
+  margin-bottom: 15px; }
+
+.sidebar .sidebar-desc {
+  color: #00ab86;
+  text-align: center; }
+
+.sidebar .sidebar-tab-nav {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0; }
+  .sidebar .sidebar-tab-nav a {
+    border-left: 4px solid transparent;
+    display: block;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px 15px; }
+  .sidebar .sidebar-tab-nav .active a,
+  .sidebar .sidebar-tab-nav li a:hover,
+  .sidebar .sidebar-tab-nav li a:focus {
+    background-color: #e8f5f3;
+    border-left: 4px solid #00ab86;
+    color: #00ab86; }
+
+.sidebar .search {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 10px; }
+
+.sidebar .sidebar-filters {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0; }
+  .sidebar .sidebar-filters li {
+    margin-bottom: 15px; }
+    .sidebar .sidebar-filters li label {
+      line-height: 1.5; }
+  .sidebar .sidebar-filters li:last-child {
+    margin-bottom: 0; }
+
+.sidebar .submit {
+  width: 100%; }
+
 .app-footer {
   background-color: #fafafa;
   padding: 60px 0;
@@ -610,18 +683,12 @@ h6 {
 
 .to-top {
   background-color: #00ab86;
-  border-radius: 50%;
   bottom: 32px;
   color: #fff !important;
   display: none;
-  height: 56px;
-  line-height: 56px;
   position: fixed;
   right: 24px;
-  text-align: center;
-  transition: 350ms;
-  width: 56px;
-  z-index: 2; }
+  text-align: center; }
 
 .to-top:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.28); }

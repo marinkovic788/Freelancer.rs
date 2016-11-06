@@ -110,6 +110,10 @@ h6 {
   box-shadow: inset 0 -10rem 0 $button-hover;
 }
 
+.md-check > i:before {
+  border-radius: 0;
+}
+
 /* App */
 .app-header ~ .app-body {
   padding-bottom: 60px;
@@ -437,6 +441,101 @@ h6 {
 }
 
 //Content
+.section {
+  padding: 60px 15px;
+}
+
+.h-divider {
+  color: $divider-color;
+}
+
+.sidebar {
+  .sidebar-item {
+    border-bottom: 1px solid $divider-color;
+    padding: 30px 0;
+    width: 100%;
+  }
+
+  .sidebar-item:first-child {
+    padding: 0 0 30px;
+  }
+
+  .sidebar-item:last-child {
+    padding: 30px 0 0;
+  }
+
+  .sidebar-item:last-child,
+  .no-border {
+    border-bottom: 0;
+  }
+
+  .no-padding {
+    padding: 0 !important;
+  }
+
+  .no-margin {
+    margin-bottom: 0 !important;
+  }
+
+  .sidebar-title {
+    margin-bottom: 15px;
+  }
+
+  .sidebar-desc {
+    color: $green-600;
+    text-align: center;
+  }
+
+  .sidebar-tab-nav {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+
+    a {
+      border-left: 4px solid transparent;
+      display: block;
+      font-size: $h5-size;
+      margin: 0;
+      padding: 20px 15px;
+    }
+
+    .active a,
+    li a:hover,
+    li a:focus {
+      background-color: $green-g;
+      border-left: 4px solid $green-600;
+      color: $green-600;
+    }
+  }
+
+  .search {
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  .sidebar-filters {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 15px;
+
+      label {
+        line-height: 1.5;
+      }
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .submit {
+    width: 100%;
+  }
+}
 
 //Footer
 .app-footer {
@@ -527,18 +626,12 @@ h6 {
 
 .to-top {
   background-color: $green-600;
-  border-radius: 50%;
   bottom: 32px;
   color: $bw-50 !important;
   display: none;
-  height: 56px;
-  line-height: 56px;
   position: fixed;
   right: 24px;
   text-align: center;
-  transition: 350ms;
-  width: 56px;
-  z-index: 2;
 }
 
 .to-top:hover {
