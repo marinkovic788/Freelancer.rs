@@ -365,6 +365,7 @@ h6 {
   padding-bottom: 60px;
   padding-top: 0; }
 
+/* Header */
 .app-header {
   position: relative; }
 
@@ -475,6 +476,7 @@ h6 {
   .header .navbar {
     background-color: #fafafa; }
 
+/* Nav */
 .main-nav {
   background-color: #fafafa;
   border-radius: 0;
@@ -530,6 +532,7 @@ h6 {
   .main-nav {
     min-height: 8px; } }
 
+/* Hero section */
 .hero {
   padding: 60px 0;
   text-align: center; }
@@ -562,6 +565,7 @@ h6 {
       .hero .h-search .h-trending-services .h-trending-service:last-child {
         margin-right: 0; }
 
+/* Content */
 .section {
   padding: 60px 15px; }
 
@@ -632,6 +636,26 @@ h6 {
 .sidebar .submit {
   width: 100%; }
 
+.projects nav {
+  text-align: center; }
+
+.projects .pagination > li > a {
+  border: 0;
+  padding: 6px 12px; }
+
+.projects .pagination > li > .nav-next,
+.projects .pagination > li > .nav-previous {
+  margin: 0 10px;
+  padding: 6px 8px; }
+
+.projects .pagination > li > a:hover,
+.projects .pagination > .active > a,
+.projects .pagination > li > .nav-next,
+.projects .pagination > li > .nav-previous {
+  background-color: #d81b60 !important;
+  color: #fafafa !important; }
+
+/* Footer */
 .app-footer {
   background-color: #fafafa;
   padding: 60px 0;

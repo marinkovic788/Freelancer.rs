@@ -120,7 +120,7 @@ h6 {
   padding-top: 0;
 }
 
-//Header
+/* Header */
 .app-header {
   position: relative;
 }
@@ -298,7 +298,7 @@ h6 {
   }
 }
 
-//Nav
+/* Nav */
 .main-nav {
   background-color: $bwm-50;
   border-radius: 0;
@@ -384,7 +384,7 @@ h6 {
   }
 }
 
-//Hero section
+/* Hero section */
 .hero {
   padding: 60px 0;
   text-align: center;
@@ -440,7 +440,7 @@ h6 {
   }
 }
 
-//Content
+/* Content */
 .section {
   padding: 60px 15px;
 }
@@ -449,6 +449,7 @@ h6 {
   color: $divider-color;
 }
 
+//Sidebar
 .sidebar {
   .sidebar-item {
     border-bottom: 1px solid $divider-color;
@@ -537,7 +538,33 @@ h6 {
   }
 }
 
-//Footer
+//Current projects
+.projects {
+  nav {
+    text-align: center;
+  }
+
+  .pagination > li > a {
+    border: 0;
+    padding: 6px 12px;
+  }
+
+  .pagination > li > .nav-next,
+  .pagination > li > .nav-previous {
+    margin: 0 10px;
+    padding: 6px 8px;
+  }
+
+  .pagination > li > a:hover,
+  .pagination > .active > a,
+  .pagination > li > .nav-next,
+  .pagination > li > .nav-previous {
+    background-color: $pink-600 !important;
+    color: $bwm-50 !important;
+  }
+}
+
+/* Footer */
 .app-footer {
   background-color: $bwm-50;
   padding: 60px 0;
