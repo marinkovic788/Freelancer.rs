@@ -303,6 +303,39 @@
   color: $sys-blue;
 }
 
+//Project label
+.p-finished {
+  background-color: $project-finished;
+
+  .arrow {
+    border-color: $project-finished;
+  }
+}
+
+.p-ending {
+  background-color: $project-ending;
+
+  .arrow {
+    border-color: $project-ending;
+  }
+}
+
+.p-in-progress {
+  background-color: $project-in-progress;
+
+  .arrow {
+    border-color: $project-in-progress;
+  }
+}
+
+.p-new {
+  background-color: $project-new;
+
+  .arrow {
+    border-color: $project-new;
+  }
+}
+
 /* Shadows */
 .shadow {
   @include shadow;
