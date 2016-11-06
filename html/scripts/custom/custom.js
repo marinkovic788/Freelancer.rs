@@ -7,3 +7,9 @@ $(window).on("scroll", function () {
         $("#to-top").removeClass("show");
     }
 });
+
+// Freelancer thumbnails animation
+$('.thumbnail').hover(
+   function(){ $(this).addClass('animated ' + 'pulse') },
+   function(){ $(this).removeClass('animated ' + 'pulse') }
+);

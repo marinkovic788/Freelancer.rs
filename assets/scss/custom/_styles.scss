@@ -652,6 +652,7 @@ h6 {
 
 //Freelancers
 .thumbnail {
+  margin-bottom: 60px;
   text-align: center;
 
   .thumb-desc {
@@ -659,15 +660,23 @@ h6 {
     text-align: center;
 
     .thumb-title {
+      display: block;
       font-size: $h5-size;
       font-weight: 600;
+      margin-bottom: 10px;
     }
 
     .thumb-subtitle {
-      color: $secondary-text-color;
+      color: $secondary-font-color;
+      font-size: $h6-size;
+      font-weight: 600;
       margin: 0;
     }
   }
+}
+
+.thumbnail:hover {
+  //
 }
 
 //Services

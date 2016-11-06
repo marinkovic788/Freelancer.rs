@@ -281,9 +281,9 @@
 
 /* Shadows */
 .shadow {
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important;
-  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important; }
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important; }
 
 /* ------ Base styles ------ */
 body {
@@ -701,9 +701,9 @@ h6 {
     font-weight: 700; }
 
 .projects .project:hover {
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important;
-  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important; }
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important; }
 
 .projects .project:nth-last-child(2) {
   margin-bottom: 30px; }
@@ -732,6 +732,23 @@ h6 {
 .pagination > li > .nav-previous {
   background-color: #d81b60 !important;
   color: #fafafa !important; }
+
+.thumbnail {
+  margin-bottom: 60px;
+  text-align: center; }
+  .thumbnail .thumb-desc {
+    padding: 20px 15px;
+    text-align: center; }
+    .thumbnail .thumb-desc .thumb-title {
+      display: block;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .thumbnail .thumb-desc .thumb-subtitle {
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0; }
 
 .answers .answer {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -765,9 +782,9 @@ h6 {
     font-size: 18px; }
 
 .answers .answer:hover {
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important;
-  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.28) !important; }
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important; }
 
 .answers .answer:nth-last-child(2) {
   margin-bottom: 30px; }
