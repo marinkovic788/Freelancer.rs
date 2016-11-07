@@ -105,6 +105,17 @@ h6 {
   color: $pink-600;
 }
 
+.md-flat {
+  min-height: 36px;
+  padding: 8px 16px;
+}
+
+.md-icon {
+  font-size: 22px;
+  margin-right: 10px;
+  padding: 7px !important;
+}
+
 .btn:not([disabled]):hover,
 .btn:not([disabled]):focus,
 .btn:not([disabled]).active {
@@ -808,6 +819,98 @@ h6 {
 
 //Tutorials
 //Blog
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex > [class^='col-'],
+.flex > [class*=' col-'] {
+  align-items: top;
+  display: flex;
+  //justify-content: center;
+}
+
+@media (max-width: 750px) {
+  .flex {
+    display: block;
+  }
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+
+  .featured-image {
+    .post-category {
+      background-color: $bwm-50;
+      display: block;
+      font-size: $base-font-size;
+      font-weight: 600;
+      left: 15px;
+      padding: 10px 12px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 15px;
+    }
+
+    .post-category:hover {
+      -webkit-transform: translate3d(0, -1px, 0);
+      box-shadow: 0 4px 8px 0 $shadow-rise !important;
+      transform: translate3d(0, -1px, 0);
+    }
+
+    .business {
+      color: $sys-yellow;
+    }
+
+    .design {
+      color: $sys-red;
+    }
+
+    .android {
+      color: $sys-green;
+    }
+  }
+
+  .post-desc {
+    flex-grow: 1;
+    margin-bottom: auto;
+    padding: 30px 15px 24px;
+
+    .post-title {
+      a {
+        color: $base-font-color;
+      }
+    }
+
+    .post-excerpt {
+      line-height: 1.3;
+      margin: 0;
+    }
+  }
+
+  .post-footer {
+    margin-top: auto;
+    padding: 8px;
+
+    .post-actions {
+      display: inline-block;
+    }
+
+    .read-more {
+      //
+    }
+  }
+
+  .post-footer::after {
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
 
 /* Footer */
 .app-footer {
