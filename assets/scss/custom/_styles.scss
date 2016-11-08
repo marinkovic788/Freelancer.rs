@@ -687,10 +687,66 @@ h6 {
 }
 
 .thumbnail:hover {
-  //
+  //js .animate
 }
 
 //Services
+.services {
+  overflow: hidden;
+}
+
+.services > [class^='col-'],
+.services > [class*=' col-'] {
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  border-right: 1px solid $divider-color;
+  margin-bottom: 20px;
+  transform: translate3d(0, 0, 0);
+  transition-duration: 220ms;
+  transition-property: all;
+}
+
+.services > [class^='col-']:last-child,
+.services > [class*=' col-']:last-child {
+  border-right: 0;
+}
+
+.services > [class^='col-']:hover,
+.services > [class*=' col-']:hover {
+  -moz-transform: scale(1.045) rotate(0.0001deg);
+  -ms-transform: scale(1.045) rotate(0.0001deg);
+  -o-transform: scale(1.045) rotate(0.0001deg);
+  -webkit-transform: scale(1.045) rotate(0.0001deg);
+  background-color: $bw-50;
+  box-shadow: 0 5px 20px 0 $service-hover;
+  transform: scale(1.045) rotate(0.0001deg);
+  z-index: 2;
+}
+
+.service {
+  padding: 15px;
+  text-align: center;
+
+  .service-icon {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100px;
+  }
+
+  .service-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .service-desc {
+    border-bottom: 30px;
+    color: $secondary-font-color;
+    font-weight: 400;
+  }
+}
+
 //Knowledge base
 .answers {
   .answer {
@@ -818,6 +874,7 @@ h6 {
 }
 
 //Tutorials
+
 //Blog
 .flex {
   display: flex;
@@ -1015,5 +1072,9 @@ h6 {
 
 #services,
 #tutorials {
+  @include gradient-pgl;
+}
+
+.gradient-bg {
   @include gradient-pgl;
 }

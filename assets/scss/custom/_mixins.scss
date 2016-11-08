@@ -16,33 +16,33 @@
 // Pink
 @mixin gradient-pink {
   background: $pink-900;
-  background: -moz-linear-gradient(75deg,  $pink-900 0%, $pink-500 100%);
-  background: -webkit-linear-gradient(75deg,  $pink-900 0%, $pink-500 100%);
-  background: linear-gradient(75deg,  $pink-900 0%, $pink-500 100%);
+  background: -moz-linear-gradient(15deg,  $pink-900 0%, $pink-500 100%);
+  background: -webkit-linear-gradient(15deg,  $pink-900 0%, $pink-500 100%);
+  background: linear-gradient(15deg,  $pink-900 0%, $pink-500 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#880e4f', endColorstr='#e91e63',GradientType=1 );
 }
 // Green
 @mixin gradient-green {
   background: $green-800;
-  background: -moz-linear-gradient(75deg, $green-800 0%, $green-500 100%);
-  background: -webkit-linear-gradient(75deg, $green-800 0%, $green-500 100%);
-  background: linear-gradient(75deg, $green-800 0%, $green-500 100%);
+  background: -moz-linear-gradient(15deg, $green-800 0%, $green-500 100%);
+  background: -webkit-linear-gradient(15deg, $green-800 0%, $green-500 100%);
+  background: linear-gradient(15deg, $green-800 0%, $green-500 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e56', endColorstr='#00c99e',GradientType=1 );
 }
 // Pink-Green
 @mixin gradient-pg {
   background: $pink-700;
-  background: -moz-linear-gradient(75deg,  $pink-700 0%, $green-500 100%);
-  background: -webkit-linear-gradient(75deg,  $pink-700 0%, $green-500 100%);
-  background: linear-gradient(75deg,  $pink-700 0%, $green-500 100%);
+  background: -moz-linear-gradient(15deg,  $pink-700 0%, $green-500 100%);
+  background: -webkit-linear-gradient(15deg,  $pink-700 0%, $green-500 100%);
+  background: linear-gradient(15deg,  $pink-700 0%, $green-500 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2185b', endColorstr='#00c99e',GradientType=1 );
 }
 // Pink-Green-Light
 @mixin gradient-pgl {
   background: $pink-g;
-  background: -moz-linear-gradient(75deg,  $pink-g 0%, $green-g 100%);
-  background: -webkit-linear-gradient(75deg,  $pink-g 0%, $green-g 100%);
-  background: linear-gradient(75deg,  $pink-g 0%, $green-g 100%);
+  background: -moz-linear-gradient(15deg,  $pink-g 0%, $green-g 100%);
+  background: -webkit-linear-gradient(15deg,  $pink-g 0%, $green-g 100%);
+  background: linear-gradient(15deg,  $pink-g 0%, $green-g 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf0f3', endColorstr='#e8f5f3',GradientType=1 );
 }
 
