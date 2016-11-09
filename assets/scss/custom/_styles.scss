@@ -406,6 +406,36 @@ h6 {
   }
 }
 
+@media (max-width: 767px) {
+  .main-nav {
+    padding: 0;
+
+    .nav {
+      .nav-item:hover > .dropdown-menu {
+        display: none;
+      }
+
+      .nav-item.open {
+        background-color: transparent;
+      }
+    }
+
+    .navbar-nav .open .dropdown-menu,
+    .navbar-nav .open .dropdown-menu .open {
+      -webkit-box-shadow: none;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      display: block !important;
+      float: none;
+      margin-top: 0;
+      padding: 5px 15px;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
 /* Hero section */
 .hero {
   padding: 60px 0;
@@ -417,9 +447,10 @@ h6 {
   }
 
   .cta {
-    margin-bottom: 36px;
+    padding: 0 15px;
 
     .btn {
+      margin-bottom: 36px;
       margin-right: 20px;
     }
 
@@ -431,6 +462,7 @@ h6 {
   .h-search {
     margin: 0 auto;
     max-width: 960px;
+    padding: 0 15px;
 
     .input-group {
       margin-bottom: 18px;
