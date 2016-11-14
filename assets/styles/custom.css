@@ -292,11 +292,14 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important; }
 
 /* ------ Base styles ------ */
+html {
+  font-size: 14px; }
+
 body {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
   margin: 0;
@@ -311,34 +314,34 @@ a:hover {
 
 /* Titles */
 .huge {
-  font-size: 54px;
+  font-size: 3.85rem;
   font-weight: 800;
   margin-bottom: 36px; }
 
 h1 {
-  font-size: 42px;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center; }
 
 h2 {
-  font-size: 36px;
+  font-size: 2.57rem;
   font-weight: 600; }
 
 h3 {
-  font-size: 32px;
+  font-size: 2.28rem;
   font-weight: 600; }
 
 h4 {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: 500; }
 
 h5 {
-  font-size: 24px;
+  font-size: 1.71rem;
   font-weight: 400; }
 
 h6 {
-  font-size: 18px;
+  font-size: 1.28rem;
   font-weight: 400; }
 
 /* Buttons */
@@ -350,20 +353,20 @@ h6 {
   box-shadow: none; }
 
 .btn-lg {
-  font-size: 18px;
+  font-size: 1.28rem;
   font-weight: 700;
   line-height: 0.9;
   padding: 18px 36px;
   text-transform: uppercase; }
 
 .btn-md {
-  font-size: 18px;
+  font-size: 1.28rem;
   font-weight: 600;
   line-height: 0.8;
   padding: 12px 36px; }
 
 .btn-sm {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 0.9;
   padding: 10px 16px;
@@ -384,7 +387,7 @@ h6 {
   padding: 8px 16px; }
 
 .md-icon {
-  font-size: 22px;
+  font-size: 1.57rem;
   margin-right: 10px;
   padding: 7px !important; }
 
@@ -430,7 +433,7 @@ h6 {
   .header .usr-signed-in .notifications a:hover {
     color: rgba(255, 255, 255, 0.7); }
   .header .usr-signed-in .notifications i {
-    font-size: 24px;
+    font-size: 1.71rem;
     line-height: inherit; }
   .header .usr-signed-in .notifications ul {
     line-height: 1.4; }
@@ -487,12 +490,12 @@ h6 {
       width: 100%; }
       .header .usr-signed-in .user .usr-info .usr-name {
         color: #d81b60;
-        font-size: 28px;
+        font-size: 2rem;
         font-weight: 500;
         text-transform: uppercase; }
       .header .usr-signed-in .user .usr-info .usr-mail {
         color: rgba(0, 0, 0, 0.54);
-        font-size: 18px;
+        font-size: 1.28rem;
         font-weight: 400; }
     .header .usr-signed-in .user .usr-options {
       list-style: none;
@@ -536,7 +539,7 @@ h6 {
     .main-nav .nav .dropdown-menu {
       background-color: #fafafa;
       border-radius: 0;
-      font-size: 16px;
+      font-size: 1.14rem;
       left: initial;
       margin: 0; }
       .main-nav .nav .dropdown-menu .dropdown-item {
@@ -552,7 +555,7 @@ h6 {
       border: 0;
       border-bottom: 4px solid transparent;
       border-top: 4px solid transparent;
-      font-size: 16px;
+      font-size: 1.14rem;
       font-weight: 400;
       padding: 0 16px; }
     .main-nav .nav .nav-item:hover,
@@ -569,30 +572,6 @@ h6 {
 
 .main-nav::after {
   display: none; }
-
-@media (max-width: 991px) {
-  .main-nav {
-    min-height: 8px; } }
-
-@media (max-width: 767px) {
-  .main-nav {
-    padding: 0; }
-    .main-nav .nav .nav-item:hover > .dropdown-menu {
-      display: none; }
-    .main-nav .nav .nav-item.open {
-      background-color: transparent; }
-    .main-nav .navbar-nav .open .dropdown-menu,
-    .main-nav .navbar-nav .open .dropdown-menu .open {
-      -webkit-box-shadow: none;
-      background-color: transparent;
-      border: 0;
-      box-shadow: none;
-      display: block !important;
-      float: none;
-      margin-top: 0;
-      padding: 5px 15px;
-      position: static;
-      width: auto; } }
 
 /* Hero section */
 .hero {
@@ -618,7 +597,7 @@ h6 {
       border-width: 2px; }
     .hero .h-search .h-trending-services {
       display: inline-flex;
-      font-size: 18px;
+      font-size: 1.28rem;
       font-weight: 600; }
       .hero .h-search .h-trending-services p {
         color: rgba(0, 0, 0, 0.54);
@@ -671,7 +650,7 @@ h6 {
   .sidebar .sidebar-tab-nav a {
     border-left: 4px solid transparent;
     display: block;
-    font-size: 24px;
+    font-size: 1.71rem;
     margin: 0;
     padding: 20px 15px; }
   .sidebar .sidebar-tab-nav .active a,
@@ -706,7 +685,7 @@ h6 {
   .projects .project .project-category-icon {
     color: #d81b60;
     display: block;
-    font-size: 54px;
+    font-size: 3.85rem;
     text-align: center; }
   .projects .project .project-titile a {
     color: #d81b60; }
@@ -728,13 +707,13 @@ h6 {
     text-align: center;
     text-transform: uppercase; }
   .projects .project .project-header {
-    font-size: 12px;
+    font-size: 0.85rem;
     font-weight: 600; }
   .projects .project .project-deadline,
   .projects .project .project-applications {
-    font-size: 18px; }
+    font-size: 1.28rem; }
   .projects .project .project-budget {
-    font-size: 24px;
+    font-size: 1.71rem;
     font-weight: 700; }
 
 .projects .project:hover {
@@ -749,7 +728,7 @@ h6 {
   text-align: center; }
 
 .label-lg {
-  font-size: 13px;
+  font-size: 0.92rem;
   font-weight: 600;
   padding: 8px 12px;
   text-transform: none; }
@@ -778,12 +757,12 @@ h6 {
     text-align: center; }
     .thumbnail .thumb-desc .thumb-title {
       display: block;
-      font-size: 24px;
+      font-size: 1.71rem;
       font-weight: 600;
       margin-bottom: 10px; }
     .thumbnail .thumb-desc .thumb-subtitle {
       color: rgba(0, 0, 0, 0.54);
-      font-size: 18px;
+      font-size: 1.28;
       font-weight: 600;
       margin: 0; }
 
@@ -838,7 +817,7 @@ h6 {
   .answers .answer .answer-category-icon {
     color: #d81b60;
     display: block;
-    font-size: 54px;
+    font-size: 3.85rem;
     text-align: center; }
   .answers .answer .answer-titile a {
     color: #d81b60; }
@@ -858,10 +837,10 @@ h6 {
     text-align: center;
     text-transform: uppercase; }
   .answers .answer .answer-header {
-    font-size: 12px;
+    font-size: 0.85rem;
     font-weight: 600; }
   .answers .answer .answer-date {
-    font-size: 18px; }
+    font-size: 1.28rem; }
 
 .answers .answer:hover {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
@@ -935,7 +914,7 @@ h6 {
   .blog-post .featured-image .post-category {
     background-color: #fafafa;
     display: block;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
     left: 15px;
     padding: 10px 12px;
@@ -976,7 +955,7 @@ h6 {
 /* Footer */
 .app-footer {
   background-color: #fafafa;
-  padding: 60px 0;
+  padding: 60px 15px;
   position: relative; }
   .app-footer .fc-green h5,
   .app-footer .fc-green a:hover {
@@ -1001,10 +980,11 @@ h6 {
       line-height: 2; }
 
 .app-subfooter {
-  color: rgba(0, 0, 0, 0.54); }
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0 15px; }
   .app-subfooter .subfooter {
     display: inline-block;
-    font-size: 12px;
+    font-size: 0.85rem;
     padding: 15px 0;
     width: 100%; }
     .app-subfooter .subfooter .copyright {
@@ -1014,7 +994,7 @@ h6 {
       fill: rgba(0, 0, 0, 0.54);
       margin-right: 15px; }
     .app-subfooter .subfooter .social-nav {
-      font-size: 24px; }
+      font-size: 1.71rem; }
       .app-subfooter .subfooter .social-nav a {
         color: rgba(0, 0, 0, 0.54);
         margin-right: 20px; }
@@ -1049,5 +1029,37 @@ h6 {
   background: -webkit-linear-gradient(15deg, #fcf0f3 0%, #e8f5f3 100%);
   background: linear-gradient(15deg, #fcf0f3 0%, #e8f5f3 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf0f3', endColorstr='#e8f5f3',GradientType=1 ); }
+
+/* ------ Responsive - xl (>1200px) ------ */
+/* ------ Responsive - lg (>992px) ------ */
+/* ------ Responsive - md (>768px) ------ */
+/* ------ Responsive - sm (>544px) ------ */
+/* ------ Responsive - xs (<544px) ------ */
+/* ------ Responsive - other elements ------ */
+@media (max-width: 991px) {
+  html {
+    font-size: 12px; }
+  .main-nav {
+    min-height: 8px; } }
+
+@media (max-width: 767px) {
+  .main-nav {
+    padding: 0; }
+    .main-nav .nav .nav-item:hover > .dropdown-menu {
+      display: none; }
+    .main-nav .nav .nav-item.open {
+      background-color: transparent; }
+    .main-nav .navbar-nav .open .dropdown-menu,
+    .main-nav .navbar-nav .open .dropdown-menu .open {
+      -webkit-box-shadow: none;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      display: block !important;
+      float: none;
+      margin-top: 0;
+      padding: 5px 15px;
+      position: static;
+      width: auto; } }
 
 /*# sourceMappingURL=custom.css.map */
