@@ -140,6 +140,23 @@ h6 {
   padding-top: 0;
 }
 
+.gradient-bg {
+  @include gradient-pgl;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex > [class^='col-'],
+.flex > [class*=' col-'] {
+  align-items: top;
+  display: flex;
+  //justify-content: center;
+}
+
 /* Header */
 .pace {
   .pace-progress {
@@ -328,7 +345,7 @@ h6 {
 .main-nav {
   background-color: $bwm-50;
   border-radius: 0;
-  min-height: 40px;
+  min-height: 36px;
 
   .navbar-nav > .nav-link,
   .navbar-nav > .nav-item > .nav-link,
@@ -404,26 +421,133 @@ h6 {
   display: none;
 }
 
+/* Footer */
+.app-footer {
+  background-color: $bwm-50;
+  padding: 60px 15px;
+  position: relative;
+
+  .fc-green {
+    h5,
+    a:hover {
+      color: $sys-green;
+    }
+  }
+
+  .fc-red {
+    h5,
+    a:hover {
+      color: $sys-red;
+    }
+  }
+
+  .fc-yellow {
+    h5,
+    a:hover {
+      color: $sys-yellow;
+    }
+  }
+
+  .fc-blue {
+    h5,
+    a:hover {
+      color: $sys-blue;
+    }
+  }
+
+  h5 {
+    margin-bottom: 18px;
+  }
+
+  .footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $secondary-font-color;
+      line-height: 2;
+    }
+  }
+}
+
+.app-subfooter {
+  color: $secondary-font-color;
+  padding: 0 15px;
+
+  .subfooter {
+    display: inline-block;
+    font-size: $small-font;
+    padding: 15px 0;
+    width: 100%;
+
+    .copyright {
+      @include small;
+    }
+
+    .footer-logo {
+      fill: $secondary-font-color;
+      margin-right: 15px;
+    }
+
+    .social-nav {
+      font-size: 1.71rem; //24px
+
+      a {
+        color: $secondary-font-color;
+        margin-right: 20px;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+
+      a:hover {
+        color: $green-600;
+      }
+    }
+  }
+}
+
+.to-top {
+  background-color: $green-600;
+  bottom: 32px;
+  color: $bw-50 !important;
+  display: none;
+  position: fixed;
+  right: 24px;
+  text-align: center;
+}
+
+.to-top:hover {
+  box-shadow: 0 4px 8px 0 $shadow;
+}
+
+/* ======================================== HOME PAGE ======================================== */
+
 /* Hero section */
 .hero {
   padding: 60px 0;
   text-align: center;
 
+  .huge {
+    padding: 0 15px;
+  }
+
   h5 {
     color: $secondary-font-color;
     margin-bottom: 36px;
+    padding: 0 15px;
   }
 
   .cta {
     padding: 0 15px;
+    margin-bottom: 20px;
 
-    .btn {
-      margin-bottom: 36px;
-      margin-right: 20px;
-    }
-
-    .btn:last-child {
-      margin-right: 0;
+    .btn-clear-wrap {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 0 10px;
     }
   }
 
@@ -726,7 +850,7 @@ h6 {
 }
 
 .service {
-  padding: 15px;
+  padding: 15px 0;
   text-align: center;
 
   .service-icon {
@@ -876,24 +1000,6 @@ h6 {
 //Tutorials
 
 //Blog
-.flex {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex > [class^='col-'],
-.flex > [class*=' col-'] {
-  align-items: top;
-  display: flex;
-  //justify-content: center;
-}
-
-@media (max-width: 750px) {
-  .flex {
-    display: block;
-  }
-}
-
 .blog-post {
   display: flex;
   flex-direction: column;
@@ -969,145 +1075,140 @@ h6 {
   }
 }
 
-/* Footer */
-.app-footer {
-  background-color: $bwm-50;
-  padding: 60px 15px;
-  position: relative;
 
-  .fc-green {
-    h5,
-    a:hover {
-      color: $sys-green;
-    }
-  }
-
-  .fc-red {
-    h5,
-    a:hover {
-      color: $sys-red;
-    }
-  }
-
-  .fc-yellow {
-    h5,
-    a:hover {
-      color: $sys-yellow;
-    }
-  }
-
-  .fc-blue {
-    h5,
-    a:hover {
-      color: $sys-blue;
-    }
-  }
-
-  h5 {
-    margin-bottom: 18px;
-  }
-
-  .footer-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    a {
-      color: $secondary-font-color;
-      line-height: 2;
-    }
-  }
-}
-
-.app-subfooter {
-  color: $secondary-font-color;
-  padding: 0 15px;
-
-  .subfooter {
-    display: inline-block;
-    font-size: $small-font;
-    padding: 15px 0;
-    width: 100%;
-
-    .copyright {
-      @include small;
-    }
-
-    .footer-logo {
-      fill: $secondary-font-color;
-      margin-right: 15px;
-    }
-
-    .social-nav {
-      font-size: 1.71rem; //24px
-
-      a {
-        color: $secondary-font-color;
-        margin-right: 20px;
-      }
-
-      a:last-child {
-        margin-right: 0;
-      }
-
-      a:hover {
-        color: $green-600;
-      }
-    }
-  }
-}
-
-.to-top {
-  background-color: $green-600;
-  bottom: 32px;
-  color: $bw-50 !important;
-  display: none;
-  position: fixed;
-  right: 24px;
-  text-align: center;
-}
-
-.to-top:hover {
-  box-shadow: 0 4px 8px 0 $shadow;
-}
 
 #services,
 #tutorials {
   @include gradient-pgl;
 }
 
-.gradient-bg {
-  @include gradient-pgl;
-}
+/* ======================================== SINGLE PAGE ======================================== */
+/* ======================================== SERVICES ======================================== */
+/* ======================================== ABOUT US ======================================== */
+/* ======================================== REFERENCES ======================================== */
+/* ======================================== BLOG ======================================== */
+/* ======================================== CONTACT ======================================== */
+
+/* ======================================== SIGN IN ======================================== */
+/* ======================================== SIGN UP ======================================== */
+/* ======================================== USER PROFILES ======================================== */
+/* ======================================== USER PROFILE ======================================== */
+
+/* ======================================== RESPONSIVE ======================================== */
 
 /* ------ Responsive - xl (>1200px) ------ */
 @media (min-width: 1200px) {
-}
-/* ------ Responsive - lg (>992px) ------ */
-@media (min-width: 992px) {
-}
-/* ------ Responsive - md (>768px) ------ */
-@media (min-width: 768px) {
-}
-/* ------ Responsive - sm (>544px) ------ */
-@media (min-width: 544px) {
-}
-/* ------ Responsive - xs (<544px) ------ */
-@media (max-width: 544px) {
+  /* Titles */
+  /* Buttons */
+  /* App */
+  /* Header */
+  /* Nav */
+  /* Footer */
+  /* === HOME PAGE === */
+  /* Hero section */
+  /* Content */
+    //Sidebar
+    //Current projects
+    //Freelancers
+    //Services
+    //Knowledge base
+    //Tutorials
+    //Blog
+  /* === SINGLE PAGE === */
+  /* === SERVICES === */
+  /* === ABOUT US === */
+  /* === REFERENCES === */
+  /* === BLOG === */
+  /* === CONTACT === */
+  /* === SIGN IN === */
+  /* === SIGN UP === */
+  /* === USER PROFILES === */
+  /* === USER PROFILE === */
 }
 
-/* ------ Responsive - other elements ------ */
+/* ------ Responsive - lg (<1200px) ------ */
+@media (max-width: 1199px) {
+  /* Titles */
+  /* Buttons */
+  /* App */
+  /* Header */
+  /* Nav */
+  /* Footer */
+  /* === HOME PAGE === */
+  /* Hero section */
+  /* Content */
+    //Sidebar
+    //Current projects
+    //Freelancers
+    //Services
+    //Knowledge base
+    //Tutorials
+    //Blog
+  /* === SINGLE PAGE === */
+  /* === SERVICES === */
+  /* === ABOUT US === */
+  /* === REFERENCES === */
+  /* === BLOG === */
+  /* === CONTACT === */
+  /* === SIGN IN === */
+  /* === SIGN UP === */
+  /* === USER PROFILES === */
+  /* === USER PROFILE === */
+}
+
+/* ------ Responsive - md (<992px) ------ */
 @media (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+
+  /* Titles */
+  /* Buttons */
+  /* App */
+  /* Header */
+  /* Nav */
+  /* Footer */
+  /* === HOME PAGE === */
+  /* Hero section */
+  /* Content */
+    //Sidebar
+    //Current projects
+    //Freelancers
+    //Services
+    .services > [class^='col-']:nth-child(3n+3),
+    .services > [class*=' col-']:nth-child(3n+3) {
+      border-right: 0;
+    }
+    //Knowledge base
+    //Tutorials
+    //Blog
+  /* === SINGLE PAGE === */
+  /* === SERVICES === */
+  /* === ABOUT US === */
+  /* === REFERENCES === */
+  /* === BLOG === */
+  /* === CONTACT === */
+  /* === SIGN IN === */
+  /* === SIGN UP === */
+  /* === USER PROFILES === */
+  /* === USER PROFILE === */
+}
+
+/* ------ Responsive - sm (<768px) ------ */
+@media (max-width: 767px) {
   html {
     font-size: 12px;
   }
 
-  .main-nav {
-    min-height: 8px;
+  /* Titles */
+  /* Buttons */
+  /* App */
+  /* Header */
+  /* Nav */
+  .mobile-nav {
+    margin: 0 1rem;
   }
-}
 
-@media (max-width: 767px) {
   .main-nav {
     padding: 0;
 
@@ -1134,5 +1235,144 @@ h6 {
       position: static;
       width: auto;
     }
+  }
+  /* Footer */
+  .subfooter {
+    text-align: center;
+
+    .copyright,
+    .social-nav {
+      float: none;
+    }
+  }
+  /* === HOME PAGE === */
+  /* Hero section */
+  /* Content */
+    //Sidebar
+    //Current projects
+    .project {
+      text-align: center;
+
+      .project-attributes {
+        margin-bottom: 15px;
+      }
+
+      .project-parameters {
+        span:first-child {
+          padding: 0 0 5px !important;
+        }
+      }
+    }
+    //Freelancers
+    //Services
+    .services > [class^='col-']:nth-child(3n+3),
+    .services > [class*=' col-']:nth-child(3n+3) {
+      border-right: 1px solid $divider-color;
+    }
+
+    .services > [class^='col-']:nth-child(2n+2),
+    .services > [class*=' col-']:nth-child(2n+2) {
+      border-right: 0;
+    }
+    //Knowledge base
+    .answer {
+      .answer-parameters {
+        span:first-child {
+          padding: 0 0 5px !important;
+        }
+      }
+    }
+    //Tutorials
+    //Blog
+    .blog-post {
+      margin-bottom: 60px;
+    }
+  /* === SINGLE PAGE === */
+  /* === SERVICES === */
+  /* === ABOUT US === */
+  /* === REFERENCES === */
+  /* === BLOG === */
+  /* === CONTACT === */
+  /* === SIGN IN === */
+  /* === SIGN UP === */
+  /* === USER PROFILES === */
+  /* === USER PROFILE === */
+}
+
+/* ------ Responsive - xs (<544px) ------ */
+@media (max-width: 543px) {
+  /* Titles */
+  /* Buttons */
+  /* App */
+  /* Header */
+  /* Nav */
+  /* Footer */
+  /* === HOME PAGE === */
+  /* Hero section */
+  /* Content */
+    //Sidebar
+    //Current projects
+    //Freelancers
+    //Services
+    .services > [class^='col-']:nth-child(3n+3),
+    .services > [class*=' col-']:nth-child(3n+3) {
+      border-right: 0;
+    }
+
+    .services > [class^='col-']:nth-child(2n+2),
+    .services > [class*=' col-']:nth-child(2n+2) {
+      border-right: 0;
+    }
+
+    .services > [class^='col-'],
+    .services > [class*=' col-'] {
+      border-right: 0;
+    }
+    //Knowledge base
+    .answer {
+      text-align: center;
+
+      .answer-attributes {
+        margin-bottom: 15px;
+      }
+
+      .answer-parameters {
+        span:first-child,
+        span.answer-date {
+          display: inline-block;
+          font-size: 1.28rem;
+          padding: 0 !important;
+        }
+
+        span.answer-header {
+          font-weight: 400;
+          text-transform: capitalize;
+          border-bottom: 0;
+        }
+
+        span.answer-header::after {
+          content: ': ';
+        }
+      }
+    }
+
+    //Tutorials
+    //Blog
+  /* === SINGLE PAGE === */
+  /* === SERVICES === */
+  /* === ABOUT US === */
+  /* === REFERENCES === */
+  /* === BLOG === */
+  /* === CONTACT === */
+  /* === SIGN IN === */
+  /* === SIGN UP === */
+  /* === USER PROFILES === */
+  /* === USER PROFILE === */
+}
+
+/* ------ Responsive - other elements ------ */
+@media (max-width: 750px) {
+  .flex {
+    display: block;
   }
 }

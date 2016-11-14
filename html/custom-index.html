@@ -36,14 +36,8 @@
 
   <div id="content" class="app-content box-shadow-z0" role="main">
     <!-- Header -->
-    <div class="app-header white box-shadow">
+    <div class="app-header bwm-50 box-shadow">
         <div class="header">
-			<!-- Open side - Naviation on mobile -->
-            <a data-toggle="collapse" data-target="#navbar-main" class="navbar-item pull-left hidden-md-up">
-              <i class="material-icons">&#xe5d2;</i>
-            </a>
-            <!-- / -->
-
 			<!-- Logo -->
 			<a class="navbar-brand">
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -86,7 +80,9 @@
                     }
                     .st0{fill:#ffffff;}
 					.st1{fill:#ffffff;}
-					.navbar-brand:hover .st1 {
+					.navbar-brand:hover .st1,
+                    .navbar-brand:focus .st1,
+                    .navbar-brand:active .st1 {
                       -webkit-animation-name: rotateIn;
                       animation-name: rotateIn;
                       -webkit-animation-duration: 1s;
@@ -219,7 +215,8 @@
                       <h1 class="huge">Freelancer Srbija</h1>
                       <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio<br/> corporis quae nu?</h5>
                       <div class="cta">
-                        <button class="btn btn-lg md-btn md-raised pink-600">Angažuj Freelancera</button><button class="btn btn-lg md-btn md-raised green-600">Postani Freelancer</button>
+                        <div class="btn-clear-wrap"><button class="btn btn-lg md-btn md-raised pink-600">Angažuj Freelancera</button></div>
+                        <div class="btn-clear-wrap"><button class="btn btn-lg md-btn md-raised green-600">Postani Freelancer</button></div>
                       </div>
                       <div class="h-search">
                         <div class="input-group input-group-lg">
@@ -246,7 +243,7 @@
             <div class="col-sm-12"><h1>Aktuelni projekti</h1></div>
           </div>
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-12">
               <div class="sidebar">
                 <div class="sidebar-item no-border no-padding">
                   <p class="sidebar-desc no-margin">Pretražite aktuelne projekte ili angažujte dizajnere, programere, komjuniti menadžere ili ostale profile:</p>
@@ -285,31 +282,31 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-9">
+            <div class="col-md-9 col-sm-12">
               <div class="projects">
                 <div class="project">
                   <div class="row">
-                    <div class="col-md-1"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
-                    <div class="col-md-6">
+                    <div class="col-md-1 col-sm-12 col-xs-12"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                       <h5 class="project-titile"><a href="#">Web & mobile aplikacija</a></h5>
                       <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="project-attributes">
                         <span class="label label-lg p-finished pos-rlt m-r-xs"><b class="arrow top"></b>Završen</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Rok</span>
                         <span class="project-deadline">13.10.2016.</span>
                       </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Prijava</span>
                         <span class="project-applications">6</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Budžet</span>
                         <span class="project-budget">20.000</span>
@@ -319,27 +316,27 @@
                 </div>
                 <div class="project">
                   <div class="row">
-                    <div class="col-md-1"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
-                    <div class="col-md-6">
+                    <div class="col-md-1 col-sm-12 col-xs-12"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                       <h5 class="project-titile"><a href="#">Web & mobile aplikacija</a></h5>
                       <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="project-attributes">
                         <span class="label label-lg p-ending pos-rlt m-r-xs"><b class="arrow top"></b>Uskoro ističe</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Rok</span>
                         <span class="project-deadline">13.10.2016.</span>
                       </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Prijava</span>
                         <span class="project-applications">6</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Budžet</span>
                         <span class="project-budget">20.000</span>
@@ -349,27 +346,27 @@
                 </div>
                 <div class="project">
                   <div class="row">
-                    <div class="col-md-1"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
-                    <div class="col-md-6">
+                    <div class="col-md-1 col-sm-12 col-xs-12"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                       <h5 class="project-titile"><a href="#">Web & mobile aplikacija</a></h5>
                       <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="project-attributes">
                         <span class="label label-lg p-in-progress pos-rlt m-r-xs"><b class="arrow top"></b>U toku</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Rok</span>
                         <span class="project-deadline">13.10.2016.</span>
                       </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Prijava</span>
                         <span class="project-applications">6</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Budžet</span>
                         <span class="project-budget">20.000</span>
@@ -379,27 +376,27 @@
                 </div>
                 <div class="project">
                   <div class="row">
-                    <div class="col-md-1"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
-                    <div class="col-md-6">
+                    <div class="col-md-1 col-sm-12 col-xs-12"><span class="project-category-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                       <h5 class="project-titile"><a href="#">Web & mobile aplikacija</a></h5>
                       <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="project-attributes">
                         <span class="label label-lg p-new pos-rlt m-r-xs"><b class="arrow top"></b>Novi konkurs</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Rok</span>
                         <span class="project-deadline">13.10.2016.</span>
                       </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Prijava</span>
                         <span class="project-applications">6</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                       <div class="project-parameters">
                         <span class="project-header">Budžet</span>
                         <span class="project-budget">20.000</span>
@@ -508,7 +505,7 @@
           <div class="col-sm-12"><h1>Digitalne usluge</h1></div>
         </div>
         <div class="row services flex">
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="service">
               <a href="#" class="service-icon"><img data-brackets-id="15193" src="../assets/images/custom/freelancer_rs_services_design.jpg" alt="" class="img-responsive"></a>
               <h5 class="service-title">Grafički dizajn</h5>
@@ -516,7 +513,7 @@
               <button class="read-more btn btn-sm pink-600">Detaljnije</button>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="service">
               <a href="#" class="service-icon"><img data-brackets-id="15193" src="../assets/images/custom/freelancer_rs_services_design.jpg" alt="" class="img-responsive"></a>
               <h5 class="service-title">Web dizajn i programiranje</h5>
@@ -524,7 +521,7 @@
               <button class="read-more btn btn-sm pink-600">Detaljnije</button>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="service">
               <a href="#" class="service-icon"><img data-brackets-id="15193" src="../assets/images/custom/freelancer_rs_services_design.jpg" alt="" class="img-responsive"></a>
               <h5 class="service-title">Mobilne aplikacije</h5>
@@ -532,7 +529,7 @@
               <button class="read-more btn btn-sm pink-600">Detaljnije</button>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="service">
               <a href="#" class="service-icon"><img data-brackets-id="15193" src="../assets/images/custom/freelancer_rs_services_design.jpg" alt="" class="img-responsive"></a>
               <h5 class="service-title">Online marketing</h5>
@@ -540,7 +537,7 @@
               <button class="read-more btn btn-sm pink-600">Detaljnije</button>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="service">
               <a href="#" class="service-icon"><img data-brackets-id="15193" src="../assets/images/custom/freelancer_rs_services_design.jpg" alt="" class="img-responsive"></a>
               <h5 class="service-title">Pisanje tekstova</h5>
@@ -548,7 +545,7 @@
               <button class="read-more btn btn-sm pink-600">Detaljnije</button>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="service">
               <a href="#" class="service-icon"><img data-brackets-id="15193" src="../assets/images/custom/freelancer_rs_services_design.jpg" alt="" class="img-responsive"></a>
               <h5 class="service-title">Audio i Video</h5>
@@ -564,7 +561,7 @@
             <div class="col-sm-12"><h1>Baza znanja</h1></div>
           </div>
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-12">
               <div class="sidebar">
                 <div class="sidebar-item">
                   <p class="sidebar-desc no-margin">Postavite pitanje ili pretražite bazu znanja. Naša zajednica će pokušati da odgovori i tako Vam pomogne da prevaziđete problem i trenutni zastoj u radu.</p>
@@ -598,19 +595,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-9">
+            <div class="col-md-9 col-sm-12">
               <div class="answers">
                 <div class="answer">
                   <div class="row">
-                    <div class="col-md-1"><span class="answer-category-icon"><i class="fa fa-wordpress" aria-hidden="true"></i></span></div>
-                    <div class="col-md-9">
+                    <div class="col-md-1 col-sm-12"><span class="answer-category-icon"><i class="fa fa-wordpress" aria-hidden="true"></i></span></div>
+                    <div class="col-md-9 col-sm-10">
                       <h5 class="answer-titile"><a href="#">WordPress</a></h5>
                       <p class="answer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="answer-attributes">
                         <span class="label label-lg p-finished pos-rlt m-r-xs"><b class="arrow top"></b>WordPress</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="answer-parameters">
                         <span class="answer-header">Datum</span>
                         <span class="answer-date">13.10.2016.</span>
@@ -620,15 +617,15 @@
                 </div>
                 <div class="answer">
                   <div class="row">
-                    <div class="col-md-1"><span class="answer-category-icon"><i class="fa fa-html5" aria-hidden="true"></i></span></div>
-                    <div class="col-md-9">
+                    <div class="col-md-1 col-sm-12"><span class="answer-category-icon"><i class="fa fa-html5" aria-hidden="true"></i></span></div>
+                    <div class="col-md-9 col-sm-10">
                       <h5 class="answer-titile"><a href="#">HTML5</a></h5>
                       <p class="answer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="answer-attributes">
                         <span class="label label-lg p-finished pos-rlt m-r-xs"><b class="arrow top"></b>HTML5</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="answer-parameters">
                         <span class="answer-header">Datum</span>
                         <span class="answer-date">13.10.2016.</span>
@@ -638,15 +635,15 @@
                 </div>
                 <div class="answer">
                   <div class="row">
-                    <div class="col-md-1"><span class="answer-category-icon"><i class="fa fa-drupal" aria-hidden="true"></i></span></div>
-                    <div class="col-md-9">
+                    <div class="col-md-1 col-sm-12"><span class="answer-category-icon"><i class="fa fa-drupal" aria-hidden="true"></i></span></div>
+                    <div class="col-md-9 col-sm-10">
                       <h5 class="answer-titile"><a href="#">Drupal</a></h5>
                       <p class="answer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="answer-attributes">
                         <span class="label label-lg p-finished pos-rlt m-r-xs"><b class="arrow top"></b>Drupal</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="answer-parameters">
                         <span class="answer-header">Datum</span>
                         <span class="answer-date">13.10.2016.</span>
@@ -656,15 +653,15 @@
                 </div>
                 <div class="answer">
                   <div class="row">
-                    <div class="col-md-1"><span class="answer-category-icon"><i class="fa fa-github" aria-hidden="true"></i></span></div>
-                    <div class="col-md-9">
+                    <div class="col-md-1 col-sm-12"><span class="answer-category-icon"><i class="fa fa-github" aria-hidden="true"></i></span></div>
+                    <div class="col-md-9 col-sm-10">
                       <h5 class="answer-titile"><a href="#">GitHub</a></h5>
                       <p class="answer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="answer-attributes">
                         <span class="label label-lg p-finished pos-rlt m-r-xs"><b class="arrow top"></b>GitHub</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="answer-parameters">
                         <span class="answer-header">Datum</span>
                         <span class="answer-date">13.10.2016.</span>
@@ -674,15 +671,15 @@
                 </div>
                 <div class="answer">
                   <div class="row">
-                    <div class="col-md-1"><span class="answer-category-icon"><i class="fa fa-joomla" aria-hidden="true"></i></span></div>
-                    <div class="col-md-9">
+                    <div class="col-md-1 col-sm-12"><span class="answer-category-icon"><i class="fa fa-joomla" aria-hidden="true"></i></span></div>
+                    <div class="col-md-9 col-sm-10">
                       <h5 class="answer-titile"><a href="#">Joomla</a></h5>
                       <p class="answer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
                       <div class="answer-attributes">
                         <span class="label label-lg p-finished pos-rlt m-r-xs"><b class="arrow top"></b>Joomla</span>
                       </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="answer-parameters">
                         <span class="answer-header">Datum</span>
                         <span class="answer-date">13.10.2016.</span>
