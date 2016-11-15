@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   line-height: 1;
   margin: 0;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -1159,9 +1160,8 @@ h6 {
 /* ------ Responsive - md (<992px) ------ */
 @media (max-width: 991px) {
   html {
-    font-size: 13px;
+    //font-size: 13px;
   }
-
   /* Titles */
   /* Buttons */
   /* App */
@@ -1197,13 +1197,46 @@ h6 {
 /* ------ Responsive - sm (<768px) ------ */
 @media (max-width: 767px) {
   html {
-    font-size: 12px;
+    //font-size: 12px;
   }
 
   /* Titles */
   /* Buttons */
   /* App */
   /* Header */
+  .header {
+    text-align: center;
+
+    .navbar-brand {
+      display: inline-block;
+      margin-right: 0;
+      padding: 0 1rem;
+    }
+
+    .usr-signed-in,
+    .usr-signed-out {
+      display: inline-block;
+      float: none;
+
+      .btn {
+        margin-top: 10px;
+      }
+    }
+
+    .usr-signed-out {
+      display: inline-block;
+      float: none;
+      width: 100%;
+      text-align: center;
+
+      .nav-item {
+        display: inline-block;
+        float: none;
+        margin: 0 !important;
+        padding: 0 5px;
+      }
+    }
+  }
   /* Nav */
   .mobile-nav {
     margin: 0 1rem;
@@ -1211,6 +1244,7 @@ h6 {
 
   .main-nav {
     padding: 0;
+    min-height: 42px;
 
     .nav {
       .nav-item:hover > .dropdown-menu {
@@ -1307,6 +1341,16 @@ h6 {
   /* Header */
   /* Nav */
   /* Footer */
+  .app-footer {
+    text-align: center;
+
+    .fc-green,
+    .fc-red,
+    .fc-yellow,
+    .fc-blue {
+      margin-bottom: 15px;
+    }
+  }
   /* === HOME PAGE === */
   /* Hero section */
   /* Content */
@@ -1355,7 +1399,6 @@ h6 {
         }
       }
     }
-
     //Tutorials
     //Blog
   /* === SINGLE PAGE === */
@@ -1374,5 +1417,35 @@ h6 {
 @media (max-width: 750px) {
   .flex {
     display: block;
+  }
+}
+
+@media (max-width: 452px) {
+  .usr-signed-in {
+    .user {
+      .dropdown-menu {
+        width: 98vw;
+        left: -50vw;
+
+        .usr-profile {
+          padding: 28px 0;
+        }
+
+        .usr-mail {
+          overflow-wrap: break-word;
+        }
+      }
+
+      .dropdown-menu:before {
+        right: 48vw !important;
+      }
+    }
+
+    .notifications {
+      .dropdown-menu {
+        width: 98vw;
+        right: -51vw;
+      }
+    }
   }
 }

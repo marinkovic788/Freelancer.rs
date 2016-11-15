@@ -303,6 +303,7 @@ body {
   font-weight: 400;
   line-height: 1;
   margin: 0;
+  overflow-x: hidden;
   position: relative; }
 
 a,
@@ -1046,8 +1047,6 @@ h6 {
 /* ------ Responsive - lg (<1200px) ------ */
 /* ------ Responsive - md (<992px) ------ */
 @media (max-width: 991px) {
-  html {
-    font-size: 13px; }
   /* Titles */
   /* Buttons */
   /* App */
@@ -1073,17 +1072,39 @@ h6 {
 
 /* ------ Responsive - sm (<768px) ------ */
 @media (max-width: 767px) {
-  html {
-    font-size: 12px; }
   /* Titles */
   /* Buttons */
   /* App */
   /* Header */
+  .header {
+    text-align: center; }
+    .header .navbar-brand {
+      display: inline-block;
+      margin-right: 0;
+      padding: 0 1rem; }
+    .header .usr-signed-in,
+    .header .usr-signed-out {
+      display: inline-block;
+      float: none; }
+      .header .usr-signed-in .btn,
+      .header .usr-signed-out .btn {
+        margin-top: 10px; }
+    .header .usr-signed-out {
+      display: inline-block;
+      float: none;
+      width: 100%;
+      text-align: center; }
+      .header .usr-signed-out .nav-item {
+        display: inline-block;
+        float: none;
+        margin: 0 !important;
+        padding: 0 5px; }
   /* Nav */
   .mobile-nav {
     margin: 0 1rem; }
   .main-nav {
-    padding: 0; }
+    padding: 0;
+    min-height: 42px; }
     .main-nav .nav .nav-item:hover > .dropdown-menu {
       display: none; }
     .main-nav .nav .nav-item.open {
@@ -1144,6 +1165,13 @@ h6 {
   /* Header */
   /* Nav */
   /* Footer */
+  .app-footer {
+    text-align: center; }
+    .app-footer .fc-green,
+    .app-footer .fc-red,
+    .app-footer .fc-yellow,
+    .app-footer .fc-blue {
+      margin-bottom: 15px; }
   /* === HOME PAGE === */
   /* Hero section */
   /* Content */
@@ -1186,5 +1214,19 @@ h6 {
 @media (max-width: 750px) {
   .flex {
     display: block; } }
+
+@media (max-width: 452px) {
+  .usr-signed-in .user .dropdown-menu {
+    width: 98vw;
+    left: -50vw; }
+    .usr-signed-in .user .dropdown-menu .usr-profile {
+      padding: 28px 0; }
+    .usr-signed-in .user .dropdown-menu .usr-mail {
+      overflow-wrap: break-word; }
+  .usr-signed-in .user .dropdown-menu:before {
+    right: 48vw !important; }
+  .usr-signed-in .notifications .dropdown-menu {
+    width: 98vw;
+    right: -51vw; } }
 
 /*# sourceMappingURL=custom.css.map */
