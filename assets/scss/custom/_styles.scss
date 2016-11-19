@@ -25,6 +25,14 @@ a:hover {
   box-shadow: 0 2px 4px $shadow;
 }
 
+.clear::after {
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* Titles */
 .huge {
   @include huge;
@@ -156,6 +164,10 @@ h6 {
   align-items: top;
   display: flex;
   //justify-content: center;
+}
+
+.md-check > i {
+  margin-left: -17px;
 }
 
 /* Header */
@@ -598,6 +610,8 @@ h6 {
 
 //Sidebar
 .sidebar {
+  margin-bottom: 60px;
+
   .sidebar-item {
     border-bottom: 1px solid $divider-color;
     padding: 30px 0;
@@ -1085,9 +1099,79 @@ h6 {
 
 /* ======================================== SINGLE PAGE ======================================== */
 /* ======================================== SERVICES ======================================== */
+.service-box {
+  .service-desc {
+    margin: 10px 0;
+    padding: 0 15px;
+  }
+
+  .service-desc {
+    .service-title {
+      display: block;
+      font-size: 1.28rem; //18px
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .service-subtitle {
+      color: $secondary-font-color;
+      margin-bottom: 5px;
+    }
+  }
+
+  .author-details {
+    padding: 10px 15px;
+    .author {
+      float: left;
+
+      .author-image {
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .author-info {
+        display: inline-block;
+
+        .author-name,
+        .author-position {
+          margin: 0 0 5px;
+        }
+
+        .author-position {
+          color: $secondary-font-color;
+          font-size: $small-font;
+        }
+      }
+    }
+
+    .author-options {
+      float: right;
+      line-height: 3;
+    }
+  }
+}
+
+.alternate {
+  .alt-image {
+    order: 1;
+  }
+
+  .alt-text {
+    order: 2;
+  }
+}
 /* ======================================== ABOUT US ======================================== */
 /* ======================================== REFERENCES ======================================== */
 /* ======================================== BLOG ======================================== */
+/* ======================================== BLOG/POST ======================================== */
 /* ======================================== CONTACT ======================================== */
 
 /* ======================================== SIGN IN ======================================== */
@@ -1282,6 +1366,10 @@ h6 {
   /* === HOME PAGE === */
   /* Hero section */
   /* Content */
+    #current-projects .row [class*="col-"]:first-child,
+    #knowledge-base .row [class*="col-"]:first-child {
+      //margin-bottom: 60px;
+    }
     //Sidebar
     //Current projects
     .project {
@@ -1323,6 +1411,18 @@ h6 {
     }
   /* === SINGLE PAGE === */
   /* === SERVICES === */
+  .alternate {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .alt-image {
+      img {
+        padding: 30px 60px;
+      }
+    }
+  }
   /* === ABOUT US === */
   /* === REFERENCES === */
   /* === BLOG === */
@@ -1353,6 +1453,9 @@ h6 {
   }
   /* === HOME PAGE === */
   /* Hero section */
+  .h-trending-services {
+    display: none !important;
+  }
   /* Content */
     //Sidebar
     //Current projects

@@ -256,14 +256,17 @@
 
 .gradient-pink {
   @include gradient-pink;
+  color: $bw-50 !important;
 }
 
 .gradient-green {
   @include gradient-green;
+  color: $bw-50 !important;
 }
 
 .gradient-pg {
   @include gradient-pg;
+  color: $bw-50 !important;
 }
 
 .gradient-pgl {
