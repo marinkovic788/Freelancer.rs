@@ -143,6 +143,11 @@ h6 {
   border-radius: 0;
 }
 
+/* Forms */
+input.form-control {
+  border-radius: 5px;
+}
+
 /* App */
 .app-header ~ .app-body {
   padding-bottom: 60px;
@@ -1015,7 +1020,7 @@ h6 {
 //Tutorials
 
 //Blog
-.blog-post {
+.latest-post {
   display: flex;
   flex-direction: column;
 
@@ -1171,6 +1176,104 @@ h6 {
 /* ======================================== ABOUT US ======================================== */
 /* ======================================== REFERENCES ======================================== */
 /* ======================================== BLOG ======================================== */
+.blog-posts-wrapper {
+  .blog-post {
+    flex-basis: 50%;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blp-featured-image {
+      background: url('../../assets/images/custom/freelancer_rs_blog_default_featured_image.jpg');
+      background-size: cover;
+      max-height: 140px;
+      overflow: hidden;
+    }
+
+    .blp-post-desc {
+      flex-grow: 1;
+      margin-bottom: auto;
+      padding: 30px 15px 24px;
+
+      .post-title {
+        color: $base-font-color;
+      }
+
+      .post-excerpt {
+        line-height: 1.3;
+        margin: 0;
+      }
+    }
+
+    .blp-post-footer {
+      margin-top: auto;
+      padding: 8px;
+
+      .post-actions {
+        display: inline-block;
+      }
+
+      .read-more {
+        //
+      }
+    }
+  }
+
+  nav {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+// Sidebar
+.trending-posts {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+
+  .trending-post {
+    border-bottom: 1px solid $divider-color;
+    display: flex;
+
+    .trending-post-img {
+      background: url('../../assets/images/custom/freelancer_rs_blog_default_featured_image.jpg');
+      background-size: cover;
+      width: 75px;
+      height: 110px;
+      overflow: hidden;
+      position: relative;
+      float: left;
+      margin-right: 10px;
+      flex-shrink: 0;
+
+      .tp-img-wrap {
+        position: relative;
+        float: right;
+        right: 50%;
+        height: 100%;
+      }
+
+      img {
+        position: relative;
+        right: -50%;
+        height: 100%;
+      }
+    }
+
+    .trending-post-desc {
+      display: table-cell;
+      height: 110px;
+      vertical-align: middle;
+    }
+
+    a {
+      color: $base-font-color !important;
+    }
+  }
+}
+
 /* ======================================== BLOG/POST ======================================== */
 /* ======================================== CONTACT ======================================== */
 
@@ -1185,6 +1288,7 @@ h6 {
 @media (min-width: 1200px) {
   /* Titles */
   /* Buttons */
+  /* Forms */
   /* App */
   /* Header */
   /* Nav */
@@ -1215,6 +1319,7 @@ h6 {
 @media (max-width: 1199px) {
   /* Titles */
   /* Buttons */
+  /* Forms */
   /* App */
   /* Header */
   /* Nav */
@@ -1248,6 +1353,7 @@ h6 {
   }
   /* Titles */
   /* Buttons */
+  /* Forms */
   /* App */
   /* Header */
   /* Nav */
@@ -1286,6 +1392,7 @@ h6 {
 
   /* Titles */
   /* Buttons */
+  /* Forms */
   /* App */
   /* Header */
   .header {
@@ -1371,6 +1478,9 @@ h6 {
       //margin-bottom: 60px;
     }
     //Sidebar
+    .sidebar {
+      display: none;
+    }
     //Current projects
     .project {
       text-align: center;
@@ -1406,7 +1516,7 @@ h6 {
     }
     //Tutorials
     //Blog
-    .blog-post {
+    .latest-post {
       margin-bottom: 60px;
     }
   /* === SINGLE PAGE === */
@@ -1437,6 +1547,7 @@ h6 {
 @media (max-width: 543px) {
   /* Titles */
   /* Buttons */
+  /* Forms */
   /* App */
   /* Header */
   /* Nav */
