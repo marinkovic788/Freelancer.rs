@@ -1190,10 +1190,13 @@ input.form-control {
       background: url('../../assets/images/custom/freelancer_rs_blog_default_featured_image.jpg');
       background-size: cover;
       max-height: 140px;
+      height: 140px;
       overflow: hidden;
 
       a {
         display: block;
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -1289,6 +1292,32 @@ input.form-control {
   .blog-post-content {
     padding: 30px 0;
     border-bottom: 1px solid $divider-color;
+
+    .img-responsive {
+      margin: 30px 0;
+    }
+
+    .quote {
+      font-style: italic;
+      display: block;
+      padding-left: 15px;
+      position: relative;
+      font-size: 1.71rem; //24px
+      margin: 60px 0;
+      border-left: 4px solid $green-600;
+      color: $secondary-font-color;
+
+      .quote-author::before {
+        content: '- ';
+      }
+
+      .quote-author {
+        font-size: 1.28rem;
+        font-weight: 700;
+        display: block;
+        text-align: right;
+      }
+    }
   }
 
   .author,
@@ -1301,18 +1330,11 @@ input.form-control {
     .btn-groups {
       margin-bottom: 0;
       padding: 5px 0;
-    }
-  }
 
-  .quote {
-    font-style: italic;
-    display: block;
-    padding-left: 15px;
-    position: relative;
-    font-size: 1.71rem; //24px
-    margin: 60px 0;
-    border-left: 4px solid $green-600;
-    color: $secondary-font-color;
+      .btn {
+        border: 0;
+      }
+    }
   }
 }
 

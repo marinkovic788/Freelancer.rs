@@ -1095,9 +1095,12 @@ input.form-control {
     background: url("../../assets/images/custom/freelancer_rs_blog_default_featured_image.jpg");
     background-size: cover;
     max-height: 140px;
+    height: 140px;
     overflow: hidden; }
     .blog-posts-wrapper .blog-post .blp-featured-image a {
-      display: block; }
+      display: block;
+      height: 100%;
+      width: 100%; }
   .blog-posts-wrapper .blog-post .blp-post-desc {
     flex-grow: 1;
     margin-bottom: auto;
@@ -1156,6 +1159,24 @@ input.form-control {
 .blog-post .blog-post-content {
   padding: 30px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  .blog-post .blog-post-content .img-responsive {
+    margin: 30px 0; }
+  .blog-post .blog-post-content .quote {
+    font-style: italic;
+    display: block;
+    padding-left: 15px;
+    position: relative;
+    font-size: 1.71rem;
+    margin: 60px 0;
+    border-left: 4px solid #00ab86;
+    color: rgba(0, 0, 0, 0.54); }
+    .blog-post .blog-post-content .quote .quote-author::before {
+      content: '- '; }
+    .blog-post .blog-post-content .quote .quote-author {
+      font-size: 1.28rem;
+      font-weight: 700;
+      display: block;
+      text-align: right; }
 
 .blog-post .author,
 .blog-post .post-tags,
@@ -1165,16 +1186,8 @@ input.form-control {
 .blog-post .social .btn-groups {
   margin-bottom: 0;
   padding: 5px 0; }
-
-.blog-post .quote {
-  font-style: italic;
-  display: block;
-  padding-left: 15px;
-  position: relative;
-  font-size: 1.71rem;
-  margin: 60px 0;
-  border-left: 4px solid #00ab86;
-  color: rgba(0, 0, 0, 0.54); }
+  .blog-post .social .btn-groups .btn {
+    border: 0; }
 
 /* ======================================== CONTACT ======================================== */
 /* ======================================== SIGN IN ======================================== */
