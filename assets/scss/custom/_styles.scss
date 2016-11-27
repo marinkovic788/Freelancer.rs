@@ -32,6 +32,18 @@ a:hover {
   height: 0;
   visibility: hidden;
 }
+/* Text */
+.align-l {
+  text-align: left;
+}
+
+.align-r {
+  text-align: right;
+}
+
+.align-c {
+  text-align: center;
+}
 
 /* Titles */
 .huge {
@@ -545,6 +557,17 @@ input.form-control {
 /* ======================================== HOME PAGE ======================================== */
 
 /* Hero section */
+.cta {
+  padding: 0 15px;
+  margin-bottom: 20px;
+
+  .btn-clear-wrap {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 0 10px;
+  }
+}
+
 .hero {
   padding: 60px 0;
   text-align: center;
@@ -557,17 +580,6 @@ input.form-control {
     color: $secondary-font-color;
     margin-bottom: 36px;
     padding: 0 15px;
-  }
-
-  .cta {
-    padding: 0 15px;
-    margin-bottom: 20px;
-
-    .btn-clear-wrap {
-      display: inline-block;
-      margin-bottom: 16px;
-      padding: 0 10px;
-    }
   }
 
   .h-search {
@@ -664,7 +676,7 @@ input.form-control {
       display: block;
       font-size: 1.71rem; //24px
       margin: 0;
-      padding: 20px 15px;
+      padding: 10px 15px;
     }
 
     .active a,
@@ -1284,6 +1296,28 @@ input.form-control {
 
 /* ======================================== BLOG/POST ======================================== */
 
+.quote {
+  font-style: italic;
+  display: block;
+  padding-left: 15px;
+  position: relative;
+  font-size: 1.71rem; //24px
+  margin: 60px 0;
+  border-left: 4px solid $green-600;
+  color: $secondary-font-color;
+
+  .quote-author::before {
+    content: '- ';
+  }
+
+  .quote-author {
+    font-size: 1.28rem;
+    font-weight: 700;
+    display: block;
+    text-align: right;
+  }
+}
+
 .blog-post {
   .featured-image {
     margin-bottom: 30px;
@@ -1295,28 +1329,6 @@ input.form-control {
 
     .img-responsive {
       margin: 30px 0;
-    }
-
-    .quote {
-      font-style: italic;
-      display: block;
-      padding-left: 15px;
-      position: relative;
-      font-size: 1.71rem; //24px
-      margin: 60px 0;
-      border-left: 4px solid $green-600;
-      color: $secondary-font-color;
-
-      .quote-author::before {
-        content: '- ';
-      }
-
-      .quote-author {
-        font-size: 1.28rem;
-        font-weight: 700;
-        display: block;
-        text-align: right;
-      }
     }
   }
 
@@ -1339,10 +1351,120 @@ input.form-control {
 }
 
 /* ======================================== CONTACT ======================================== */
-
 /* ======================================== SIGN IN ======================================== */
 /* ======================================== SIGN UP ======================================== */
 /* ======================================== USER PROFILES ======================================== */
+.freelancers {
+  .freelancer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 30px 15px;
+
+    .freelancer-img {
+      display: block;
+      margin: 0 auto 15px;
+      max-height: 182px;
+      max-width: 182px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        //
+      }
+
+      .view-profile {
+        -webkit-transition: opacity .2s;
+        background: $overlay-pink;
+        border-radius: 50%;
+        color: $bw-50;
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        height: 100%;
+        line-height: 182px;
+        max-height: 182px;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        transition: opacity .2s;
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+
+    .freelancer-view {
+      .btn {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .freelancer-rate {
+      display: block;
+      float: right;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .freelancer-name {
+      a {
+        color: $pink-600;
+      }
+    }
+
+    .freelancer-subtitle {
+      color: $green-600;
+
+      .member-since {
+        margin-right: 15px;
+      }
+      .from {
+        //
+      }
+    }
+    .freelancer-desc {
+      .read-more {
+        //
+      }
+    }
+    .freelancer-skill-tags {
+      .tag {
+        .label {
+          background-color: $pink-600;
+          color: $dark-base-font-color !important;
+        }
+      }
+      .tag.more:last-child {
+        .label {
+          background-color: $bw-300;
+          color: $dark-base-font-color !important;
+        }
+      }
+    }
+  }
+
+  .freelancer:hover {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28) !important;
+
+    .freelancer-img {
+      .view-profile {
+        opacity: 1;
+      }
+    }
+  }
+
+  .freelancer:nth-last-child(2) {
+    margin-bottom: 30px;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
+
 /* ======================================== USER PROFILE ======================================== */
 
 /* ======================================== RESPONSIVE ======================================== */
@@ -1603,6 +1725,10 @@ input.form-control {
   /* === SIGN IN === */
   /* === SIGN UP === */
   /* === USER PROFILES === */
+  .freelancer-view {
+    display: block;
+    margin-bottom: 30px;
+  }
   /* === USER PROFILE === */
 }
 
@@ -1687,6 +1813,17 @@ input.form-control {
   /* === SIGN IN === */
   /* === SIGN UP === */
   /* === USER PROFILES === */
+  .member-since {
+    display: block;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .from {
+    display: block;
+    margin-right: 0;
+    width: 100%;
+  }
   /* === USER PROFILE === */
 }
 
