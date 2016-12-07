@@ -9,7 +9,7 @@ $(window).on("scroll", function () {
 });
 
 // Freelancer thumbnails animation
-$('.thumbnail').hover(
+$('.pop').hover(
    function(){ $(this).addClass('animated ' + 'pulse') },
    function(){ $(this).removeClass('animated ' + 'pulse') }
 );

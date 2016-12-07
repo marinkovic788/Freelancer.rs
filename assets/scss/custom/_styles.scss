@@ -1121,9 +1121,7 @@ input.form-control {
   .service-desc {
     margin: 10px 0;
     padding: 0 15px;
-  }
 
-  .service-desc {
     .service-title {
       display: block;
       font-size: 1.28rem; //18px
@@ -1175,6 +1173,68 @@ input.form-control {
       line-height: 3;
     }
   }
+
+  .service-footer {
+    padding: 10px 15px;
+
+    .author-recommended {
+      display: block;
+      float: left;
+
+      .author {
+        display: block;
+        font-weight: 700;
+      }
+
+      .service-recommendation {
+        display: block;
+      }
+    }
+
+    .service-price {
+      display: inline-block;
+      float: right;
+      text-align: right;
+
+      .price {
+        display: block;
+        font-size: 1.42rem;
+        font-weight: 700;
+        line-height: 1.42rem;
+      }
+
+      .time {
+        display: block;
+        font-weight: 700;
+        color: $secondary-font-color;
+      }
+    }
+
+    .service-price::after {
+      content: '';
+      clear: both;
+      display: block;
+      height: 0;
+    }
+  }
+
+  .custom-service {
+    padding: 10px 15px;
+    text-align: center;
+
+    .img-responsive {
+      padding: 15%;
+    }
+
+    .service-title {
+      color: $pink-600 !important;
+      font-weight: 700;
+      font-size: 1.42rem;
+    }
+    .service-subtitle {
+      color: $secondary-font-color !important;
+    }
+  }
 }
 
 .alternate {
@@ -1186,6 +1246,7 @@ input.form-control {
     order: 2;
   }
 }
+
 /* ======================================== ABOUT US ======================================== */
 /* ======================================== REFERENCES ======================================== */
 /* ======================================== BLOG ======================================== */
@@ -1419,15 +1480,18 @@ input.form-control {
       .member-since {
         margin-right: 15px;
       }
+
       .from {
         //
       }
     }
+
     .freelancer-desc {
       .read-more {
         //
       }
     }
+
     .freelancer-skill-tags {
       .tag {
         .label {
@@ -1435,6 +1499,7 @@ input.form-control {
           color: $dark-base-font-color !important;
         }
       }
+
       .tag.more:last-child {
         .label {
           background-color: $bw-300;
@@ -1466,6 +1531,230 @@ input.form-control {
 }
 
 /* ======================================== USER PROFILE ======================================== */
+.freelance-category {
+  padding: 15px;
+  margin-bottom: 15px;
+
+  .logo {
+    display: inline-block;
+    width: 58px;
+    padding-right: 15px;
+    border-right: 2px solid $bw-50;
+    margin-right: 15px;
+  }
+
+  .category {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  .links {
+    display: block;
+    float: right;
+
+    .link {
+      margin-bottom: 0;
+      text-align: right;
+
+      a {
+        color: $bw-50 !important;
+      }
+    }
+  }
+
+  .links::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.freelancer-profile {
+  .profile-section {
+    border-bottom: 1px solid $divider-color;
+    padding: 30px 0;
+  }
+
+  .freelancer-overview {
+    .freelancer-name {
+      color: $pink-600;
+    }
+
+    .freelancer-subtitle {
+      color: $green-600;
+
+      .member-since {
+        margin-right: 15px;
+      }
+    }
+
+    .freelancer-skill-tags {
+      .tag {
+        .label {
+          background-color: $pink-600;
+          color: $dark-base-font-color !important;
+        }
+      }
+
+      .tag.more:nth-last-child(2) {
+        .label {
+          background-color: $bw-300;
+          color: $dark-base-font-color !important;
+        }
+      }
+
+      .more-tags {
+        display: inline;
+
+        #more-tags.collapse.in {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .freelancer-specs {
+    padding: 15px 0;
+
+    .freelancer-experience,
+    .freelancer-ratings,
+    .freelancer-hire {
+      margin-bottom: 15px;
+    }
+
+    .freelancer-experience {
+      .xp-with {
+        font-weight: 700;
+      }
+
+      .xp-with::after {
+        content: ', ';
+      }
+
+      .xp-amount {
+        //font-style: italic;
+      }
+    }
+
+    .freelancer-ratings {
+      .stat {
+        border-bottom: 1px solid $divider-color;
+        margin-bottom: 5px;
+        padding: 5px 0;
+
+        .title {
+          display: block;
+          width: 100%;
+        }
+
+        .progress {
+          display: block;
+          float: left;
+          margin-bottom: 0;
+          width: 90%;
+        }
+
+        .score {
+          display: block;
+          float: left;
+          padding-left: 10px;
+          text-align: right;
+          width: 10%;
+        }
+      }
+
+      .stat::after {
+        content: '';
+        clear: both;
+        display: block;
+        height: 0;
+      }
+
+      .stat:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    .freelancer-hire {
+      //align-items: center;
+      display: flex;
+      justify-content: center;
+      //min-height: 300px;
+      padding: 36px 0;
+
+      .cta {
+        margin-bottom: 0;
+      }
+
+      .rate {
+        font-size: 1.42rem;
+        font-weight: 800;
+        text-align: center;
+
+        .hourly-rate,
+        .monthly-rate {
+          display: block;
+        }
+      }
+    }
+
+    .freelancer-rate {
+      display: block;
+      float: right;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .freelancer-portfolio {
+    // Masonry
+  }
+
+  .freelancer-reviews {
+    border-bottom: 0;
+
+    h5 {
+      .label {
+        vertical-align: -webkit-baseline-middle;
+        vertical-align: -moz-middle-with-baseline;
+        vertical-align: sub;
+      }
+    }
+
+    .review {
+      border-bottom: 1px solid $divider-color;
+      display: block;
+      margin-bottom: 15px;
+      padding: 15px 0;
+
+      .star-rating {
+        color: $pink-600;
+        font-size: 1.71rem;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .review-text {
+        margin-bottom: 10px;
+        .read-more {
+          //
+        }
+      }
+
+      .client {
+        .list-body::after {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .review-nav {
+      border-bottom: 1px solid $divider-color;
+    }
+  }
+}
 
 /* ======================================== RESPONSIVE ======================================== */
 
