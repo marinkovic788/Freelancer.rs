@@ -53,8 +53,6 @@ a:hover {
 h1 {
   font-size: $h1-size;
   font-weight: $h1-weight;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 h2 {
@@ -628,7 +626,7 @@ input.form-control {
 
 //Sidebar
 .sidebar {
-  margin-bottom: 60px;
+  //margin-bottom: 60px;
 
   .sidebar-item {
     border-bottom: 1px solid $divider-color;
@@ -1577,6 +1575,14 @@ input.form-control {
   }
 
   .freelancer-overview {
+    padding-top: 0;
+
+    .img-responsive {
+      max-width: 260px;
+      display: block;
+      margin: 0 auto;
+    }
+
     .freelancer-name {
       color: $pink-600;
     }
@@ -1688,13 +1694,17 @@ input.form-control {
       }
 
       .rate {
-        font-size: 1.42rem;
+        font-size: 1.71rem;
         font-weight: 800;
         text-align: center;
 
         .hourly-rate,
         .monthly-rate {
-          display: block;
+          display: inline-block;
+        }
+
+        .hourly-rate::after {
+          content: ' |';
         }
       }
     }
@@ -2019,6 +2029,34 @@ input.form-control {
     margin-bottom: 30px;
   }
   /* === USER PROFILE === */
+  .freelancer-profile {
+    .freelancer-overview,
+    .freelancer-specs {
+      text-align: center;
+    }
+
+    .freelancer-overview {
+      .img-responsive {
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+    }
+
+    .freelancer-specs {
+      .freelancer-experience {
+        border-bottom: 1px solid $divider-color;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+      }
+    }
+
+    .freelancer-portfolio,
+    .freelancer-reviews {
+      h5 {
+        text-align: center;
+      }
+    }
+  }
 }
 
 /* ------ Responsive - xs (<544px) ------ */

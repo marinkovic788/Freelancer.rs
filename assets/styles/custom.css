@@ -341,17 +341,15 @@ a:hover {
 
 h1 {
   font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 30px;
-  text-align: center; }
+  font-weight: 500; }
 
 h2 {
   font-size: 2.57rem;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h3 {
   font-size: 2.28rem;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h4 {
   font-size: 2rem;
@@ -359,11 +357,11 @@ h4 {
 
 h5 {
   font-size: 1.71rem;
-  font-weight: 400; }
+  font-weight: 500; }
 
 h6 {
   font-size: 1.28rem;
-  font-weight: 400; }
+  font-weight: 500; }
 
 /* Buttons */
 .btn {
@@ -727,60 +725,69 @@ input.form-control {
 .h-divider {
   color: rgba(0, 0, 0, 0.12); }
 
-.sidebar {
-  margin-bottom: 60px; }
-  .sidebar .sidebar-item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    padding: 30px 0;
-    width: 100%; }
-  .sidebar .sidebar-item:first-child {
-    padding: 0 0 30px; }
-  .sidebar .sidebar-item:last-child {
-    padding: 30px 0 0; }
-  .sidebar .sidebar-item:last-child,
-  .sidebar .no-border {
-    border-bottom: 0; }
-  .sidebar .no-padding {
-    padding: 0 !important; }
-  .sidebar .no-margin {
-    margin-bottom: 0 !important; }
-  .sidebar .sidebar-title {
+.sidebar .sidebar-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 30px 0;
+  width: 100%; }
+
+.sidebar .sidebar-item:first-child {
+  padding: 0 0 30px; }
+
+.sidebar .sidebar-item:last-child {
+  padding: 30px 0 0; }
+
+.sidebar .sidebar-item:last-child,
+.sidebar .no-border {
+  border-bottom: 0; }
+
+.sidebar .no-padding {
+  padding: 0 !important; }
+
+.sidebar .no-margin {
+  margin-bottom: 0 !important; }
+
+.sidebar .sidebar-title {
+  margin-bottom: 15px; }
+
+.sidebar .sidebar-desc {
+  color: #00ab86;
+  text-align: center; }
+
+.sidebar .sidebar-tab-nav {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0; }
+  .sidebar .sidebar-tab-nav a {
+    border-left: 4px solid transparent;
+    display: block;
+    font-size: 1.71rem;
+    margin: 0;
+    padding: 10px 15px; }
+  .sidebar .sidebar-tab-nav .active a,
+  .sidebar .sidebar-tab-nav li a:hover,
+  .sidebar .sidebar-tab-nav li a:focus {
+    background-color: #e8f5f3;
+    border-left: 4px solid #00ab86;
+    color: #00ab86; }
+
+.sidebar .search {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 10px; }
+
+.sidebar .sidebar-filters {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0; }
+  .sidebar .sidebar-filters li {
     margin-bottom: 15px; }
-  .sidebar .sidebar-desc {
-    color: #00ab86;
-    text-align: center; }
-  .sidebar .sidebar-tab-nav {
-    list-style: none;
-    margin-bottom: 0;
-    padding: 0; }
-    .sidebar .sidebar-tab-nav a {
-      border-left: 4px solid transparent;
-      display: block;
-      font-size: 1.71rem;
-      margin: 0;
-      padding: 10px 15px; }
-    .sidebar .sidebar-tab-nav .active a,
-    .sidebar .sidebar-tab-nav li a:hover,
-    .sidebar .sidebar-tab-nav li a:focus {
-      background-color: #e8f5f3;
-      border-left: 4px solid #00ab86;
-      color: #00ab86; }
-  .sidebar .search {
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding: 10px; }
-  .sidebar .sidebar-filters {
-    list-style: none;
-    margin-bottom: 0;
-    padding: 0; }
-    .sidebar .sidebar-filters li {
-      margin-bottom: 15px; }
-      .sidebar .sidebar-filters li label {
-        line-height: 1.5; }
-    .sidebar .sidebar-filters li:last-child {
-      margin-bottom: 0; }
-  .sidebar .submit {
-    width: 100%; }
+    .sidebar .sidebar-filters li label {
+      line-height: 1.5; }
+  .sidebar .sidebar-filters li:last-child {
+    margin-bottom: 0; }
+
+.sidebar .submit {
+  width: 100%; }
 
 .projects .project {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -1338,26 +1345,28 @@ input.form-control {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   padding: 30px 0; }
 
-.freelancer-profile .freelancer-overview .freelancer-name {
-  color: #d81b60; }
-
-.freelancer-profile .freelancer-overview .freelancer-subtitle {
-  color: #00ab86; }
-  .freelancer-profile .freelancer-overview .freelancer-subtitle .member-since {
-    margin-right: 15px; }
-
-.freelancer-profile .freelancer-overview .freelancer-skill-tags .tag .label {
-  background-color: #d81b60;
-  color: white !important; }
-
-.freelancer-profile .freelancer-overview .freelancer-skill-tags .tag.more:nth-last-child(2) .label {
-  background-color: #b2b2b2;
-  color: white !important; }
-
-.freelancer-profile .freelancer-overview .freelancer-skill-tags .more-tags {
-  display: inline; }
-  .freelancer-profile .freelancer-overview .freelancer-skill-tags .more-tags #more-tags.collapse.in {
+.freelancer-profile .freelancer-overview {
+  padding-top: 0; }
+  .freelancer-profile .freelancer-overview .img-responsive {
+    max-width: 260px;
+    display: block;
+    margin: 0 auto; }
+  .freelancer-profile .freelancer-overview .freelancer-name {
+    color: #d81b60; }
+  .freelancer-profile .freelancer-overview .freelancer-subtitle {
+    color: #00ab86; }
+    .freelancer-profile .freelancer-overview .freelancer-subtitle .member-since {
+      margin-right: 15px; }
+  .freelancer-profile .freelancer-overview .freelancer-skill-tags .tag .label {
+    background-color: #d81b60;
+    color: white !important; }
+  .freelancer-profile .freelancer-overview .freelancer-skill-tags .tag.more:nth-last-child(2) .label {
+    background-color: #b2b2b2;
+    color: white !important; }
+  .freelancer-profile .freelancer-overview .freelancer-skill-tags .more-tags {
     display: inline; }
+    .freelancer-profile .freelancer-overview .freelancer-skill-tags .more-tags #more-tags.collapse.in {
+      display: inline; }
 
 .freelancer-profile .freelancer-specs {
   padding: 15px 0; }
@@ -1401,12 +1410,14 @@ input.form-control {
     .freelancer-profile .freelancer-specs .freelancer-hire .cta {
       margin-bottom: 0; }
     .freelancer-profile .freelancer-specs .freelancer-hire .rate {
-      font-size: 1.42rem;
+      font-size: 1.71rem;
       font-weight: 800;
       text-align: center; }
       .freelancer-profile .freelancer-specs .freelancer-hire .rate .hourly-rate,
       .freelancer-profile .freelancer-specs .freelancer-hire .rate .monthly-rate {
-        display: block; }
+        display: inline-block; }
+      .freelancer-profile .freelancer-specs .freelancer-hire .rate .hourly-rate::after {
+        content: ' |'; }
   .freelancer-profile .freelancer-specs .freelancer-rate {
     display: block;
     float: right;
@@ -1562,7 +1573,20 @@ input.form-control {
   .freelancer-view {
     display: block;
     margin-bottom: 30px; }
-  /* === USER PROFILE === */ }
+  /* === USER PROFILE === */
+  .freelancer-profile .freelancer-overview,
+  .freelancer-profile .freelancer-specs {
+    text-align: center; }
+  .freelancer-profile .freelancer-overview .img-responsive {
+    border-radius: 50%;
+    margin-bottom: 15px; }
+  .freelancer-profile .freelancer-specs .freelancer-experience {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+    padding-bottom: 10px; }
+  .freelancer-profile .freelancer-portfolio h5,
+  .freelancer-profile .freelancer-reviews h5 {
+    text-align: center; } }
 
 /* ------ Responsive - xs (<544px) ------ */
 @media (max-width: 543px) {
