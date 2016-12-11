@@ -1766,6 +1766,42 @@ input.form-control {
   }
 }
 
+/* ======================================== 404 ======================================== */
+.page-404 {
+  display: flex;
+  height: 100vh;
+  padding: 15px;
+  text-align: center;
+  width: 100vw;
+
+  .wrap-404 {
+    align-self: center;
+    width: 100vw;
+
+    i {
+      font-size: 20rem;
+    }
+  }
+}
+
+/* ======================================== 505 ======================================== */
+.page-505 {
+  display: flex;
+  height: 100vh;
+  padding: 15px;
+  text-align: center;
+  width: 100vw;
+
+  .wrap-505 {
+    align-self: center;
+    width: 100vw;
+
+    i {
+      font-size: 20rem;
+    }
+  }
+}
+
 /* ======================================== RESPONSIVE ======================================== */
 
 /* ------ Responsive - xl (>1200px) ------ */
