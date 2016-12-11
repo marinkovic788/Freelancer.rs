@@ -1612,7 +1612,13 @@ input.form-control {
     padding-bottom: 10px; }
   .freelancer-profile .freelancer-portfolio h5,
   .freelancer-profile .freelancer-reviews h5 {
-    text-align: center; } }
+    text-align: center; }
+  /* === ERROR 404 === */
+  .page-404 .wrap-404 i {
+    font-size: 15rem; }
+  /* === ERROR 505 === */
+  .page-505 .wrap-505 i {
+    font-size: 15rem; } }
 
 /* ------ Responsive - xs (<544px) ------ */
 @media (max-width: 543px) {
